@@ -3,6 +3,8 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 
 # Create your models here.
+
+
 class Post(models.Model):
     title = models.TextField(max_length=128)
     content = models.TextField()
