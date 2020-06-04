@@ -10,8 +10,7 @@
 	</style>
 {% endblock css %}
 {% block content %} 
-	<a class="btn btn-outline-primary" href="{% url 'blog-create' %}">Add new post</a>
-
+	<h1 class="mb-3">Posts by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h1>
 	{% for post in posts %}
 		<!-- Card -->
 		<div class="card promoting-card">
